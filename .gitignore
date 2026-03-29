@@ -8,3 +8,6 @@
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# Local notebook input data for street-pattern runs
+data/data_to_zip/
