@@ -11,3 +11,6 @@
 
 # Local notebook input data for street-pattern runs
 data/data_to_zip/
+
+# Local large intermediate artifact
+gdf_smallest_with_predictions_len_10k.pkl
