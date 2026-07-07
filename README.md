@@ -12,9 +12,9 @@ flowchart LR
     CORR --> REVIEW[plots and tables]
 ```
 
-## Main Image
+## Main Result
 
-![Transport and street-pattern correlation workflow](docs/readme_project_map.svg)
+![Street-pattern and transport correlation result](docs/readme_main_result.png)
 
 ## Run
 
@@ -30,7 +30,7 @@ Agent: preserve notebook outputs that justify a claim; if a correlation changes,
 
 ## Publication
 
-No standalone publication tracked; thesis integration is in the parent repo.
+No standalone publication tracked; thesis integration is in the parent repo. The README result image is copied from the dissertation figure set.
 
 ## Next Steps / Heuristics
 
