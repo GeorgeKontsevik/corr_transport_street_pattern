@@ -1,20 +1,38 @@
 # corr_transport_street_pattern
 
-Ноутбуки для анализа связи транспортной доступности и типа уличного паттерна.
+Notebook experiments linking transport accessibility and street-pattern classes.
 
-## Данные
+## Scheme
 
-Папка `data/data_to_zip` содержит подготовленные входные данные для локального запуска ноутбуков, где используется `street-pattern-classifier`.
+```mermaid
+flowchart LR
+    A[Inputs] --> B[Run: cleaned_ver.ipynb]
+    B --> C[Checked outputs]
+    C --> D[Paper / thesis use]
+```
 
-Состав:
+## Main Result
 
-- `gdf_data_polygons_85k.geojson` — полигоны для обработки.
-- `drive_graphs/` — заранее сохраненные дорожные графы.
-- `pt_graphs/` — заранее сохраненные графы общественного транспорта.
-- `my_dict.json` — вспомогательный словарь с метаданными.
+![Main result](docs/readme_result.svg)
 
-## Как использовать
+## Run
 
-Если нужно запустить ноутбуки на другой машине, достаточно перенести содержимое `data/data_to_zip` в ту же структуру директорий внутри `corr_transport_street_pattern/data/`.
+Entrypoint: `cleaned_ver.ipynb`
 
-Ноутбуки в этой папке используют эти файлы как готовый набор входных данных, чтобы не пересобирать графы с нуля.
+Human:
+
+```bash
+jupyter notebook cleaned_ver.ipynb
+```
+
+Agent:
+
+Confirm local `data/` bundle exists before running notebooks.
+
+## Publication
+
+No standalone publication tracked.
+
+## Next Steps / Heuristics
+
+Simplify by treating notebooks as exploratory; promote stable code to pipeline/submodule scripts.
