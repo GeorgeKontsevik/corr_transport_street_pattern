@@ -1,19 +1,20 @@
 # corr_transport_street_pattern
 
-Notebook experiments linking transport accessibility and street-pattern classes.
+Notebook experiments for comparing transport indicators with street-pattern structure across time and cities.
 
-## Scheme
+## System Map
 
 ```mermaid
 flowchart LR
-    A[Inputs] --> B[Run: cleaned_ver.ipynb]
-    B --> C[Checked outputs]
-    C --> D[Paper / thesis use]
+    PT[transport indicators] --> JOIN[notebook joins]
+    SP[street-pattern classes] --> JOIN
+    JOIN --> CORR[correlation checks]
+    CORR --> REVIEW[plots and tables]
 ```
 
-## Main Result
+## Main Image
 
-![Main result](docs/readme_result.svg)
+![Transport and street-pattern correlation workflow](docs/readme_project_map.svg)
 
 ## Run
 
@@ -25,14 +26,12 @@ Human:
 jupyter notebook cleaned_ver.ipynb
 ```
 
-Agent:
-
-Confirm local `data/` bundle exists before running notebooks.
+Agent: preserve notebook outputs that justify a claim; if a correlation changes, inspect the joined rows and city/year coverage before summarizing it.
 
 ## Publication
 
-No standalone publication tracked.
+No standalone publication tracked; thesis integration is in the parent repo.
 
 ## Next Steps / Heuristics
 
-Simplify by treating notebooks as exploratory; promote stable code to pipeline/submodule scripts.
+Heuristic: treat correlations as exploratory evidence, not causal claims. Keep mode/year filters visible in the notebook rather than hidden in helper code.
