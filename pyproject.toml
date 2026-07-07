@@ -1,0 +1,24 @@
+[project]
+name = "corr-transport-street-pattern"
+version = "0.1.0"
+description = "Notebook experiments for transport and street-pattern correlation."
+requires-python = ">=3.11"
+dependencies = [
+    "geopandas",
+    "huggingface-hub",
+    "jupyter",
+    "matplotlib",
+    "networkx",
+    "numpy",
+    "osmapi",
+    "osmnx",
+    "pandas",
+    "rtree",
+    "scipy",
+    "shapely",
+    "torch",
+    "tqdm",
+]
+
+[tool.uv]
+package = false
