@@ -1,5 +1,7 @@
 # corr_transport_street_pattern
 
+[![OSA-improved](https://img.shields.io/badge/improved%20by-OSA-yellow)](https://github.com/aimclub/OSA)
+
 Notebook experiments for comparing transport indicators with street-pattern structure across time and cities.
 
 ## System Map
@@ -35,3 +37,4 @@ No standalone publication tracked; thesis integration is in the parent repo. The
 ## Next Steps / Heuristics
 
 Heuristic: treat correlations as exploratory evidence, not causal claims. Keep mode/year filters visible in the notebook rather than hidden in helper code.
+
